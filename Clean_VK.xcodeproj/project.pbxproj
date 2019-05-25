@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		E7809F772298749A000BF561 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7809F762298749A000BF561 /* AppDelegate.swift */; };
-		E7809F792298749A000BF561 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7809F782298749A000BF561 /* ViewController.swift */; };
-		E7809F7C2298749A000BF561 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7809F7A2298749A000BF561 /* Main.storyboard */; };
 		E7809F7E2298749C000BF561 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7809F7D2298749C000BF561 /* Assets.xcassets */; };
 		E7809F812298749C000BF561 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7809F7F2298749C000BF561 /* LaunchScreen.storyboard */; };
+		E7809F8A22988212000BF561 /* VKSdkFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7809F8922988212000BF561 /* VKSdkFramework.framework */; };
+		E7809F8D22988459000BF561 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7809F8C22988459000BF561 /* AuthService.swift */; };
+		E7809F90229895E7000BF561 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7809F8F229895E7000BF561 /* AuthViewController.swift */; };
+		E7809F9222989605000BF561 /* AuthViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7809F9122989605000BF561 /* AuthViewController.storyboard */; };
+		E7809F95229967D4000BF561 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7809F94229967D3000BF561 /* FeedViewController.swift */; };
+		E7809F97229967DE000BF561 /* FeedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7809F96229967DE000BF561 /* FeedViewController.storyboard */; };
+		E7809F992299C999000BF561 /* ViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7809F982299C999000BF561 /* ViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E7809F732298749A000BF561 /* Clean_VK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clean_VK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7809F762298749A000BF561 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E7809F782298749A000BF561 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E7809F7B2298749A000BF561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E7809F7D2298749C000BF561 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7809F802298749C000BF561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7809F822298749C000BF561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7809F8922988212000BF561 /* VKSdkFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VKSdkFramework.framework; path = Carthage/Build/iOS/VKSdkFramework.framework; sourceTree = "<group>"; };
+		E7809F8C22988459000BF561 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		E7809F8F229895E7000BF561 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		E7809F9122989605000BF561 /* AuthViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthViewController.storyboard; sourceTree = "<group>"; };
+		E7809F94229967D3000BF561 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		E7809F96229967DE000BF561 /* FeedViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedViewController.storyboard; sourceTree = "<group>"; };
+		E7809F982299C999000BF561 /* ViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7809F8A22988212000BF561 /* VKSdkFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,7 @@
 			children = (
 				E7809F752298749A000BF561 /* Clean_VK */,
 				E7809F742298749A000BF561 /* Products */,
+				E7809F8822988212000BF561 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +67,49 @@
 			isa = PBXGroup;
 			children = (
 				E7809F762298749A000BF561 /* AppDelegate.swift */,
-				E7809F782298749A000BF561 /* ViewController.swift */,
-				E7809F7A2298749A000BF561 /* Main.storyboard */,
+				E7809F9322989626000BF561 /* Auth */,
+				E7809F8E2298845D000BF561 /* Services */,
+				E7809F9A2299C9A1000BF561 /* Extensions */,
 				E7809F7D2298749C000BF561 /* Assets.xcassets */,
 				E7809F7F2298749C000BF561 /* LaunchScreen.storyboard */,
 				E7809F822298749C000BF561 /* Info.plist */,
 			);
 			path = Clean_VK;
+			sourceTree = "<group>";
+		};
+		E7809F8822988212000BF561 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7809F8922988212000BF561 /* VKSdkFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7809F8E2298845D000BF561 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E7809F8C22988459000BF561 /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E7809F9322989626000BF561 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				E7809F8F229895E7000BF561 /* AuthViewController.swift */,
+				E7809F9122989605000BF561 /* AuthViewController.storyboard */,
+				E7809F94229967D3000BF561 /* FeedViewController.swift */,
+				E7809F96229967DE000BF561 /* FeedViewController.storyboard */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		E7809F9A2299C9A1000BF561 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E7809F982299C999000BF561 /* ViewController+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +122,7 @@
 				E7809F6F2298749A000BF561 /* Sources */,
 				E7809F702298749A000BF561 /* Frameworks */,
 				E7809F712298749A000BF561 /* Resources */,
+				E7809F8B2298823C000BF561 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -123,19 +172,44 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7809F812298749C000BF561 /* LaunchScreen.storyboard in Resources */,
+				E7809F9222989605000BF561 /* AuthViewController.storyboard in Resources */,
 				E7809F7E2298749C000BF561 /* Assets.xcassets in Resources */,
-				E7809F7C2298749A000BF561 /* Main.storyboard in Resources */,
+				E7809F97229967DE000BF561 /* FeedViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E7809F8B2298823C000BF561 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/VKSdkFramework.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E7809F6F2298749A000BF561 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7809F792298749A000BF561 /* ViewController.swift in Sources */,
+				E7809F8D22988459000BF561 /* AuthService.swift in Sources */,
+				E7809F90229895E7000BF561 /* AuthViewController.swift in Sources */,
+				E7809F95229967D4000BF561 /* FeedViewController.swift in Sources */,
+				E7809F992299C999000BF561 /* ViewController+Extension.swift in Sources */,
 				E7809F772298749A000BF561 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +217,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E7809F7A2298749A000BF561 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E7809F7B2298749A000BF561 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E7809F7F2298749C000BF561 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,6 +349,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Clean_VK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +370,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Clean_VK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
