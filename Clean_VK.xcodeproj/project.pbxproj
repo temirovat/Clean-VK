@@ -17,6 +17,10 @@
 		E7809F95229967D4000BF561 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7809F94229967D3000BF561 /* FeedViewController.swift */; };
 		E7809F97229967DE000BF561 /* FeedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7809F96229967DE000BF561 /* FeedViewController.storyboard */; };
 		E7809F992299C999000BF561 /* ViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7809F982299C999000BF561 /* ViewController+Extension.swift */; };
+		E7809F9C2299F0DA000BF561 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7809F9B2299F0DA000BF561 /* NetworkService.swift */; };
+		E7809F9E229F0E35000BF561 /* VKAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7809F9D229F0E35000BF561 /* VKAPI.swift */; };
+		E7809FA022A06E57000BF561 /* FeedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7809F9F22A06E57000BF561 /* FeedResponse.swift */; };
+		E7809FA322A070F9000BF561 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7809FA222A070F9000BF561 /* NetworkDataFetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		E7809F94229967D3000BF561 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		E7809F96229967DE000BF561 /* FeedViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedViewController.storyboard; sourceTree = "<group>"; };
 		E7809F982299C999000BF561 /* ViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extension.swift"; sourceTree = "<group>"; };
+		E7809F9B2299F0DA000BF561 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		E7809F9D229F0E35000BF561 /* VKAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKAPI.swift; sourceTree = "<group>"; };
+		E7809F9F22A06E57000BF561 /* FeedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedResponse.swift; sourceTree = "<group>"; };
+		E7809FA222A070F9000BF561 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +75,8 @@
 			isa = PBXGroup;
 			children = (
 				E7809F762298749A000BF561 /* AppDelegate.swift */,
-				E7809F9322989626000BF561 /* Auth */,
 				E7809F8E2298845D000BF561 /* Services */,
+				E7809F9322989626000BF561 /* Auth */,
 				E7809F9A2299C9A1000BF561 /* Extensions */,
 				E7809F7D2298749C000BF561 /* Assets.xcassets */,
 				E7809F7F2298749C000BF561 /* LaunchScreen.storyboard */,
@@ -89,6 +97,10 @@
 			isa = PBXGroup;
 			children = (
 				E7809F8C22988459000BF561 /* AuthService.swift */,
+				E7809F9B2299F0DA000BF561 /* NetworkService.swift */,
+				E7809FA222A070F9000BF561 /* NetworkDataFetcher.swift */,
+				E7809F9D229F0E35000BF561 /* VKAPI.swift */,
+				E7809FA122A06E5B000BF561 /* Models */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -110,6 +122,14 @@
 				E7809F982299C999000BF561 /* ViewController+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E7809FA122A06E5B000BF561 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E7809F9F22A06E57000BF561 /* FeedResponse.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,10 +226,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7809FA022A06E57000BF561 /* FeedResponse.swift in Sources */,
 				E7809F8D22988459000BF561 /* AuthService.swift in Sources */,
 				E7809F90229895E7000BF561 /* AuthViewController.swift in Sources */,
 				E7809F95229967D4000BF561 /* FeedViewController.swift in Sources */,
 				E7809F992299C999000BF561 /* ViewController+Extension.swift in Sources */,
+				E7809F9E229F0E35000BF561 /* VKAPI.swift in Sources */,
+				E7809FA322A070F9000BF561 /* NetworkDataFetcher.swift in Sources */,
+				E7809F9C2299F0DA000BF561 /* NetworkService.swift in Sources */,
 				E7809F772298749A000BF561 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
