@@ -21,7 +21,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bOt-Zb-fsb">
                         <rect key="frame" x="8" y="8" width="359" height="43"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mBk-7l-WP5">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mBk-7l-WP5" customClass="WebImageView" customModule="Clean_VK" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="3.5" width="36" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="Ief-rm-c9G"/>
@@ -63,10 +63,10 @@
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wD8-Aw-yp3">
-                        <rect key="frame" x="8" y="54" width="359" height="98"/>
+                        <rect key="frame" x="8" y="54" width="359" height="50"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="98" id="uFA-c6-pj3"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="uFA-c6-pj3"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -201,15 +201,21 @@
                             <constraint firstItem="xI3-1x-ExZ" firstAttribute="leading" secondItem="p58-f0-SfG" secondAttribute="leading" id="vmG-TK-57M"/>
                         </constraints>
                     </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tZA-ON-iyV" customClass="WebImageView" customModule="Clean_VK" customModuleProvider="target">
+                        <rect key="frame" x="8" y="104" width="359" height="52"/>
+                    </imageView>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="p58-f0-SfG" firstAttribute="top" secondItem="tZA-ON-iyV" secondAttribute="bottom" id="89H-ke-drP"/>
+                    <constraint firstItem="tZA-ON-iyV" firstAttribute="leading" secondItem="KFz-FN-fuD" secondAttribute="leading" constant="8" id="Caj-07-5Te"/>
                     <constraint firstAttribute="trailing" secondItem="p58-f0-SfG" secondAttribute="trailing" constant="8" id="Lns-XX-RoG"/>
                     <constraint firstItem="p58-f0-SfG" firstAttribute="leading" secondItem="KFz-FN-fuD" secondAttribute="leading" constant="8" id="MXY-7z-ocF"/>
                     <constraint firstItem="wD8-Aw-yp3" firstAttribute="top" secondItem="bOt-Zb-fsb" secondAttribute="bottom" constant="3" id="RWC-cr-Zoq"/>
+                    <constraint firstItem="tZA-ON-iyV" firstAttribute="top" secondItem="wD8-Aw-yp3" secondAttribute="bottom" id="Rmw-Hf-I7D"/>
                     <constraint firstAttribute="trailing" secondItem="bOt-Zb-fsb" secondAttribute="trailing" constant="8" id="Xro-rs-69K"/>
+                    <constraint firstAttribute="trailing" secondItem="tZA-ON-iyV" secondAttribute="trailing" constant="8" id="YNh-RB-r62"/>
                     <constraint firstItem="wD8-Aw-yp3" firstAttribute="leading" secondItem="KFz-FN-fuD" secondAttribute="leading" constant="8" id="YwP-Rg-pHg"/>
                     <constraint firstItem="bOt-Zb-fsb" firstAttribute="leading" secondItem="KFz-FN-fuD" secondAttribute="leading" constant="8" id="imP-49-YCm"/>
-                    <constraint firstItem="p58-f0-SfG" firstAttribute="top" secondItem="wD8-Aw-yp3" secondAttribute="bottom" constant="4" id="nGV-Kn-l7B"/>
                     <constraint firstAttribute="trailing" secondItem="wD8-Aw-yp3" secondAttribute="trailing" constant="8" id="qev-1Q-Nrb"/>
                     <constraint firstItem="bOt-Zb-fsb" firstAttribute="top" secondItem="KFz-FN-fuD" secondAttribute="top" constant="8" id="vKs-na-xtm"/>
                     <constraint firstAttribute="bottom" secondItem="p58-f0-SfG" secondAttribute="bottom" constant="10.5" id="wXI-hD-65z"/>
@@ -221,6 +227,7 @@
                 <outlet property="iconImageView" destination="mBk-7l-WP5" id="QvR-K3-Mfy"/>
                 <outlet property="likesLabel" destination="V9p-Vx-N57" id="RAw-ww-Lgd"/>
                 <outlet property="nameLabel" destination="lev-U7-AuH" id="o4G-ZF-Qnk"/>
+                <outlet property="postImageView" destination="tZA-ON-iyV" id="bZN-Fi-xlD"/>
                 <outlet property="postLabel" destination="wD8-Aw-yp3" id="rsz-Pt-8ZW"/>
                 <outlet property="sharesLabel" destination="Lg2-a6-IpT" id="9NS-Tw-BEu"/>
                 <outlet property="viewsLabel" destination="OmA-Es-yf9" id="zTL-ak-B97"/>
